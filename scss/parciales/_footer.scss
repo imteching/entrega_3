@@ -1,0 +1,13 @@
+@import 'variables';
+
+.footer {
+    padding: 20px;
+}
+.rrss a {
+    text-decoration: none;
+}
+.rrss i {
+    display: $d-b;
+    padding: 10px;
+    color: $color-icono;
+}

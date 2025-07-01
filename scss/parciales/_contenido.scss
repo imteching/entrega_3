@@ -1,0 +1,75 @@
+@import 'variables';
+
+.rutasfav {
+    background: linear-gradient(90deg, palegreen, palevioletred, yellow);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s infinite alternate;
+
+    @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+    }
+
+    h3 {
+    display: $d-b;
+    text-align: $t-a-centro;
+    margin: $margen_aut;
+    padding: 50px 20px 20px 20px;
+    font-size: large;
+    }
+    .rutasfav__fav {
+    display: $d-f;
+    flex-wrap: wrap;
+    justify-content: $j-c;
+    max-width: $ancho-maximo;
+    margin: $margen_aut;
+
+    .rutasfav__parque {
+    position: relative;
+    margin: 20px;
+
+    span {
+    position: absolute;
+    text-align: $t-a-centro;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    z-index: 1;
+    }
+
+    .rutasfav__foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.5;
+    }
+    .rutasfav__foto:hover {
+    box-shadow: 10px 10px 20px fuchsia;
+    cursor: pointer;
+    opacity: 1;
+    }
+.rutasfav__foto:active {
+    transform: scale(1.05);
+}
+@media (min-width: 1200px) {
+    .rutasfav__foto {
+        width: 250px;
+        height: 250px;
+    }
+}
+}
+}
+.rutasfav__parque:hover span {
+    display: none;
+}
+
+}
+
+
+

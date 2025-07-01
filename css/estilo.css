@@ -1,3 +1,90 @@
+body {
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.fa-person-hiking {
+  color: #f79b93;
+}
+
+.rutasfav {
+  background: linear-gradient(90deg, palegreen, palevioletred, yellow);
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s infinite alternate;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.rutasfav h3 {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 50px 20px 20px 20px;
+  font-size: large;
+}
+.rutasfav .rutasfav__fav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+}
+.rutasfav .rutasfav__fav .rutasfav__parque {
+  position: relative;
+  margin: 20px;
+}
+.rutasfav .rutasfav__fav .rutasfav__parque span {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: black;
+  z-index: 1;
+}
+.rutasfav .rutasfav__fav .rutasfav__parque .rutasfav__foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.rutasfav .rutasfav__fav .rutasfav__parque .rutasfav__foto:hover {
+  box-shadow: 10px 10px 20px fuchsia;
+  cursor: pointer;
+  opacity: 1;
+}
+.rutasfav .rutasfav__fav .rutasfav__parque .rutasfav__foto:active {
+  transform: scale(1.05);
+}
+@media (min-width: 1200px) {
+  .rutasfav .rutasfav__fav .rutasfav__parque .rutasfav__foto {
+    width: 250px;
+    height: 250px;
+  }
+}
+.rutasfav .rutasfav__parque:hover span {
+  display: none;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.rrss a {
+  text-decoration: none;
+}
+
+.rrss i {
+  display: block;
+  padding: 10px;
+  color: #f79b93;
+}
 
 /*# sourceMappingURL=estilo.css.map */
