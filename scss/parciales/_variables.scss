@@ -19,9 +19,9 @@ $o-fit: cover;
 }
 
 @mixin fondo () {
-    background: linear-gradient(90deg, khaki, lightsalmon, aquamarine);
+    background: linear-gradient(90deg, plum, yellow, lightsalmon, aquamarine);
     background-size: 200% 200%;
-    animation: gradientAnimation 3s infinite alternate;
+    animation: gradientAnimation 5s infinite alternate;
 
     @keyframes gradientAnimation {
     0% {
