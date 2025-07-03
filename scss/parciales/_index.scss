@@ -1,25 +1,11 @@
 @import 'variables';
 
 .rutasfav {
-    background: linear-gradient(90deg, palegreen, palevioletred, yellow);
-    background-size: 200% 200%;
-    animation: gradientAnimation 5s infinite alternate;
-
-    @keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-    }
-
+    @include fondo
+}
+.rutasfav {
     h3 {
-    display: $d-b;
-    text-align: $t-a-centro;
-    margin: $margen_aut;
-    padding: 50px 20px 20px 20px;
-    font-size: large;
+    @include titulos-h3
     }
     .rutasfav__fav {
     display: $d-f;
@@ -46,7 +32,7 @@
     width: 200px;
     height: 200px;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: $o-fit;
     opacity: 0.5;
     }
     .rutasfav__foto:hover {
@@ -67,7 +53,7 @@
 }
 .rutasfav__parque:hover span {
     display: none;
-}
+    }
 
 }
 

@@ -1,0 +1,17 @@
+@import 'variables';
+
+main {
+    h3 {
+    @include titulos-h3
+    }
+    .blog__info {
+    height: 150px;
+    overflow: scroll;
+    }
+@media (min-width: 900px) {
+    .blog__info {
+        height: auto;
+        overflow: inherit;
+    }
+}
+}

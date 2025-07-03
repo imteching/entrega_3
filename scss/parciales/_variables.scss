@@ -5,5 +5,30 @@ $margen_aut: auto;
 $t-a-centro: center;
 $d-b: block;
 $d-f: flex;
+$d-g: grid;
 $j-c: center;
 $ancho-maximo: 80%;
+$o-fit: cover;
+
+@mixin titulos-h3() {
+    display: $d-b;
+    text-align: $t-a-centro;
+    margin: $margen_aut;
+    padding: 50px 20px 20px 20px;
+    font-size: large;
+}
+
+@mixin fondo () {
+    background: linear-gradient(90deg, khaki, lightsalmon, aquamarine);
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s infinite alternate;
+
+    @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+    }
+}
