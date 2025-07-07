@@ -1,0 +1,22 @@
+@import 'variables';
+
+.blog_1 {
+    max-width: $ancho-maximo;
+    margin: auto;
+    .mansory {
+        columns: 200px;
+        margin: 20px;
+            .reco {
+            border: 2px solid #f79b93;
+            border-radius: 15px;
+            margin-bottom: 10px;
+                .blog__reco {
+                padding: 10px;
+                    span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+

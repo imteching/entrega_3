@@ -92,6 +92,26 @@ main .blog__info {
   }
 }
 
+.blog_1 {
+  max-width: 80%;
+  margin: auto;
+}
+.blog_1 .mansory {
+  columns: 200px;
+  margin: 20px;
+}
+.blog_1 .mansory .reco {
+  border: 2px solid #f79b93;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.blog_1 .mansory .reco .blog__reco {
+  padding: 10px;
+}
+.blog_1 .mansory .reco .blog__reco span {
+  font-weight: bold;
+}
+
 .galeria__contenedor {
   max-width: 80%;
   margin: auto;

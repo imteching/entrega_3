@@ -8,10 +8,10 @@ main {
     height: 150px;
     overflow: scroll;
     }
-@media (min-width: 900px) {
+    @media (min-width: 900px) {
     .blog__info {
         height: auto;
         overflow: inherit;
+        }
     }
-}
 }
